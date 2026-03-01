@@ -117,26 +117,42 @@
             position: relative;
             left: 400px;
         }
-        @media(max-width: 413px){
-           header{
+        #more{
+            position: relative;
+            left: 88%;
+            width: 15px;
+            font-size: large;
+        }
+        h5{
+
+            text-align: center;
+        }
+        @media(max-width: 480px){
+            header{
                 width:100%;
                 height: 280px;
                 border-radius:8px;
+                text-align: center;
             }
             .pic{
                 height: 150px;
                 width: 150px;
-                left: 125px;
+                position: relative;
+                left:0px;
             
             }
             #intro{
                 position: absolute;
                 top: 200px ;
-                left: 100px;
+                left: 0px;
                 color: white;
                 font-size:15px;
-                text-align: center;
                 z-index: 0;
+                width: 100%
+            }
+            #intro>p{
+                position: relative;
+                top: -10px;
             }
             span{
                 left: 0px;
@@ -172,8 +188,6 @@
                 font-size: 35px;
                 font-family: system-ui;
                 font-weight: 500;
-                position: relative;
-                top: 30px;
             }
             main{
                 margin: 5px;
@@ -181,7 +195,7 @@
                 background-color: aliceblue;
                 padding-bottom: 5px;
                 position: relative;
-                top: 50px;
+                top: 56px;
             }
             #me>p{
                 font-size: 20px;
@@ -213,9 +227,9 @@
                 border-radius: 10px;
                 position: relative;
                 top: 50px;
-                margin-bottom:20px;
+                margin-bottom: 100px;
             }
-            footer>p{
+                footer>p{
                 display: block;
                 font-size:medium;
                 padding-left: 6px;
@@ -226,6 +240,17 @@
                 padding-left: 30px;
                 padding-top: 15px;
             }
+            #more{
+                position: relative;
+                left: 88%;
+                width: 15px;
+                font-size: large;
+            }
+            h5{
+                position: relative;
+                top: 55px;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -234,8 +259,8 @@
         <img src="images/profile.jpeg" alt="jpg" height="330px" width="320px" border-radius="5%"class="pic">
         <div id="intro" >
             <h1>Mahesh Panchal</h1>
-            <p>Computer Science Student</p><hr>
-            <p>Aspiring Web Devloper</p>
+            <p>Computer Science Student</p><hr width="100px">
+            <p >Aspiring Web Devloper</p>
         </div>
         <div id="contact">
             <span id="mail"><h3><img src="images/gmail.png" alt="logo"><a href="mailto:panchalmahesh2569@gmail.com"><h4>Gmail</h4></a></h3></span>
@@ -258,6 +283,7 @@
         <h2>&#127891 Education</h2><hr>
         <p> <b>B.Tech in Computer Science & Engineering</b></p>
         <p>Sage University Indore,2029(expected)</p>
+        <h6 id="more"><a href="Mahesh_Panchal_Qualification.pdf">more..</a></h6>
     </main>
     <main id="skill">
         <h1> &#9881 Skills</h1>
@@ -271,6 +297,7 @@
         
 
     </main>
+    <h5>If you want to download my resume <a href="Mahesh_Panchal_Resume.pdf"> click</a></h5> 
     <footer>
         <h2>Contact Information</h2><hr>
         <p>&#9993 Email: panchalmahesh2569@gmail.com</p>
@@ -279,5 +306,3 @@
     </footer>
 </body>
 </html>
-
-
